@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>FlyCloud</title>
+    
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;900&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - preload image
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-banner.png">
+  </head>
+
+  <body id="top">
+
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <h1>
+        <a href="#" class="logo">FlyCloud</a>
+      </h1>
+
+      <nav class="navbar container" data-navbar>
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#home" class="navbar-link" data-nav-link>Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#services" class="navbar-link" data-nav-link>Services</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#features" class="navbar-link" data-nav-link>Features</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#about" class="navbar-link" data-nav-link>About</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link" data-nav-link>Blog</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link" data-nav-link>Contact Us</a>
+          </li>
+
+        </ul>
+      </nav>
+
+
+
+      <button class="nav-toggle-btn" aria-label="Toggle menu" data-nav-toggle-btn>
+        <ion-icon name="menu-outline" class="menu-icon"></ion-icon>
+        <ion-icon name="close-outline" class="close-icon"></ion-icon>
+      </button>
+
+    </div>
+  </header>
+
+
+
+
+  <main>
+    <article>
+  
+      <!-- HERÓI -->
+  
+      <section class="section hero" id="home">
+        <div class="container">
+  
+          <figure class="banner">
+            <img src="./assets/images/nuvem.png" width="804" height="643" loading="lazy" alt="banner do herói"
+              class="w-100">
+          </figure>
+  
+          <div class="hero-content">
+  
+            <h2 class="h1 hero-title">Otimize Seus Custos na Nuvem com a FlyCloud</h2>
+  
+            <p class="section-text">
+              Bem-vindo à revolução da otimização de custos em nuvem! Na FlyCloud, estamos comprometidos em transformar a maneira como sua empresa utiliza a nuvem, proporcionando eficiência, economia e simplicidade para gestores de TI como você.
+            </p>
+  
+
+            <ul class="hero-list">
+  
+              <li class="hero-item">
+                <img src="./assets/images/check-circle.svg" width="16" height="16" loading="lazy" alt="Ícone de marcação">
+  
+                <span class="span">Revisão do ambiente atual</span>
+              </li>
+  
+              <li class="hero-item">
+                <img src="./assets/images/check-circle.svg" width="16" height="16" loading="lazy" alt="Ícone de marcação">
+  
+                <span class="span">Análise de recursos e custos</span>
+              </li>
+  
+              <li class="hero-item">
+                <img src="./assets/images/check-circle.svg" width="16" height="16" loading="lazy" alt="Ícone de marcação">
+  
+                <span class="span">Comparação entre clouds</span>
+              </li>
+  
+              <li class="hero-item">
+                <img src="./assets/images/check-circle.svg" width="16" height="16" loading="lazy" alt="Ícone de marcação">
+  
+                <span class="span">Migração</span>
+              </li>
+  
+              <li class="hero-item">
+                <img src="./assets/images/check-circle.svg" width="16" height="16" loading="lazy" alt="Ícone de marcação">
+  
+                <span class="span">Monitoramento simplificado e automatizado</span>
+              </li>
+  
+            </ul>
+  
+          </div>
+  
+        </div>
+      </section>
+  
+      <!-- SERVIÇO -->
+  
+      <section class="section service" id="services">
+        <div class="container">
+  
+          <h2 class="h2 section-title">Nossas Soluções Para Você</h2>
+  
+  
+          <ul class="service-list">
+  
+            <li>
+              <div class="service-card">
+  
+                <figure class="card-banner">
+                  <img src="./assets/images/service-1.gif" width="728" height="344" loading="lazy" alt="Otimização"
+                    class="w-100">
+                </figure>
+  
+                <div class="card-content">
+  
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Otimização</a>
+                  </h3>
+  
+                  <p class="card-text">
+Analisamos o seu ambiente e aplicamos técnicas para garantir que você pague apenas pelos recursos relmente necessários                  </p>
+  
+
+  
+                </div>
+  
+              </div>
+            </li>
+  
+            <li>
+              <div class="service-card">
+  
+                <figure class="card-banner">
+                  <img src="./assets/images/service-2.gif" width="728" height="344" loading="lazy" alt="Comparação"
+                    class="w-100">
+                </figure>
+  
+                <div class="card-content">
+  
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Comparação de preços</a>
+                  </h3>
+  
+                  <p class="card-text">
+Analizamos os recursos atualmente utilizados e comparamos os custos deste em diferentes provedores de cloud                  </p>
+  
+
+  
+                </div>
+  
+              </div>
+            </li>
+  
+            <li>
+              <div class="service-card">
+  
+                <figure class="card-banner">
+                  <img src="./assets/images/service-3.gif" width="728" height="344" loading="lazy" alt="Migração"
+                    class="w-100">
+                </figure>
+  
+                <div class="card-content">
+  
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Migração</a>
+                  </h3>
+  
+                  <p class="card-text">
+Profissionais especializados em multi-cloud realizam a migração garantindo a integridade, disponibilidade e segurança de seus ambientes                  </p>
+  
+
+  
+                </div>
+  
+              </div>
+            </li>
+    
+            <li>
+              <div class="service-card">
+  
+                <figure class="card-banner">
+                  <img src="./assets/images/service-1.gif" width="728" height="344" loading="lazy" alt="Monitoramento"
+                    class="w-100">
+                </figure>
+  
+                <div class="card-content">
+  
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Monitoramento</a>
+                  </h3>
+  
+                  <p class="card-text">
+Um sistema que simplifica relatórios de custos, onde o gestor consegue saber os gastos de cada aplicação e de forma automatizado receber alertas de ocorrencias                 </p>
+  
+
+  
+                </div>
+  
+              </div>
+            </li>
+          </ul>
+  
+        </div>
+      </section>
+  
+
+  
+
+      <!-- ESTATÍSTICAS -->
+  
+      <section class="section stats">
+        <div class="container">
+  
+          <figure class="stats-banner">
+            <img src="./assets/images/stats-banner.png" width="619" height="482" loading="lazy" alt="estatísticas"
+              class="w-100">
+          </figure>
+  
+          <ul class="stats-list">
+  
+            <li class="stats-item purple">
+              <h3 class="item-title">
+                15
+                <span class="span">bilhões</span>
+              </h3>
+  
+              <p class="stats-text">Gastos em cloud no Brasil por ano</p>
+            </li>
+  
+            <li class="stats-item red">
+              <h3 class="item-title">
+                10%
+              </h3>
+  
+              <p class="stats-text">Dos custos em uma statup é em cloud</p>
+            </li>
+
+  
+            <li class="stats-item yellow">
+              <h3 class="item-title">
+                +100
+                <span class="span">aplicações</span>
+              </h3>
+  
+              <p class="stats-text">Revisadas e monitoradas atualmente </p>
+            </li>
+    
+            <li class="stats-item green">
+              <h3 class="item-title">
+                50 á 80
+                <span class="span"> por cento</span>
+              </h3>
+  
+              <p class="stats-text">Economia em cloud gerada pelos nossos clientes usando nosso sistema </p>
+            </li>
+          </ul>
+  
+        </div>
+      </section>
+
+
+      <!-- 
+        - #SUPPORT
+      -->
+
+      <section class="section support">
+        <div class="container">
+
+          <div class="support-content">
+            <h2 class="h2 section-title">24/7 Suporte ao Cliente</h2>
+
+            <p class="section-text">
+Nossa equipe estará online 100% do tempo, assim insidentes podem ser corrigidos em poucos minutos.</p>
+          </div>
+ 
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+  <div id="botoes-acao" class="botoes-modal AlignRight">
+    <a class="AlignRight" href="https://api.whatsapp.com/send?phone=5511987493602&amp;text=Ol%C3%A1%2C+estava+no+site+e+gostaria+de+saber+mais+informa%C3%A7%C3%B5es+sobre+os+planos.">
+   <img style="height: 80px;z-index: 99999;width: 80px; " src="assets/images/whatsapp.png" alt="">
+</a>
+</div>
+
+<style>
+  #botoes-acao a{
+      display: flex;
+      align-items: center;
+      vertical-align: middle;
+  }
+  
+  
+  #botoes-acao {
+    position: fixed; /* não defina top/bottom/left/right */
+    width: auto;
+    height: auto;
+    background-color: #29A71A;
+    border-radius: 40px;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    z-index: 99995;
+    align-content: stretch;
+  }
+  
+  @media (max-width:600px) {
+      #botoes-acao {
+  
+    right: 0px;
+    width: 100vw;
+    text-align: right;
+          position: fixed; /* não defina top/bottom/left/right */
+    height: auto;
+    background-color: #29A71A;
+    border-radius: 40px;
+    bottom: 20px;
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    z-index: 99995;
+    align-content: stretch;
+  }
+  #botoes-acao a {
+  
+  right: 0;
+  text-align: right;
+  position: fixed;
+  z-index: 99996;
+  right: 0px;
+    text-align: right;
+          position: fixed; /* não defina top/bottom/left/right */
+    height: auto;
+    background-color: #29A71A;
+    border-radius: 40px;
+    bottom: 20px;
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    z-index: 99995;
+    align-content: stretch;
+  }
+  }
+  </style>
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+
+    <div class="footer-top section">
+      <div class="container">
+
+        <div class="footer-brand">
+          <a href="#" class="logo">FlyCloud</a>
+
+          <figure class="footer-img">
+            <img src="./assets/images/footer-img.png" width="264" height="226" loading="lazy" aria-hidden="true"
+              class="w-100">
+          </figure>
+        </div>
+
+
+
+   
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Entre em contato </p>
+          </li>
+
+          <li class="footer-item">
+            <img src="./assets/images/contact-icon-1.svg" width="16" height="16" loading="lazy" aria-hidden="true">
+
+            <span class="span">
+              <a href="tel:+5548998589586" class="footer-item-link">+55 (48) 9 9858-9586</a>
+            </span>
+          </li>
+
+          <li class="footer-item">
+            <img src="./assets/images/contact-icon-2.svg" width="16" height="16" loading="lazy" aria-hidden="true">
+
+            <span class="span">
+              <a href="#" class="footer-item-link">Florianópolis - SC</a>
+            </span>
+          </li>
+
+          <li class="footer-item">
+            <img src="./assets/images/contact-icon-3.svg" width="16" height="16" loading="lazy" aria-hidden="true">
+
+            <span class="span">
+              
+              <a href="mailto:contato@flycloud.com.br" class="footer-item-link">contato@flycloud.com.br</a>
+            </span>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2023 <span class="span">FlyCloud</span>
+        </p>
+
+
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="Back to top" data-back-top-btn>
+    <ion-icon name="chevron-up"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
